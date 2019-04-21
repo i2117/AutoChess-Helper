@@ -11,9 +11,9 @@ public class ADSComponent : MonoBehaviour
     {
         string appId;
 #if UNITY_ANDROID
-        appId = "ca-app-pub-7615586127647226~2065441665";
+        appId = "";
 #elif UNITY_IPHONE
-        appId = "ca-app-pub-7615586127647226~8036480308";
+        appId = "";
 #else
         appId = "unexpected_platform";
 #endif
@@ -28,11 +28,11 @@ public class ADSComponent : MonoBehaviour
     {
         string adUnitId;
 #if UNITY_ANDROID
-        adUnitId = "ca-app-pub-7615586127647226/7645071400";
+        adUnitId = "";
         // GOOGLE TEST ID
-        //adUnitId = "ca-app-pub-3940256099942544/6300978111";
+        //adUnitId = "";
 #elif UNITY_IPHONE
-        adUnitId = "ca-app-pub-7615586127647226/9918082777";
+        adUnitId = "";
 #else
         adUnitId = "unexpected_platform";
 #endif
@@ -42,7 +42,7 @@ public class ADSComponent : MonoBehaviour
 
         // Create an empty ad request.
         AdRequest request = new AdRequest.Builder().Build();
-        //.AddTestDevice("54D28902282B12383990E3CD646C4BDB")
+        //.AddTestDevice("")
 
         // Load the banner with the request.
         bannerView.LoadAd(request);
